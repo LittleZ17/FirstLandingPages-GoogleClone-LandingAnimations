@@ -5,19 +5,27 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="style.css">
     <title>CloneGogle</title>
 </head>
 
 <body>
     <header>
         <nav>
+            <ul class="nav-left">
+                <li>
+                    <a href="">Sobre Google</a>
+                </li>
+                <li>
+                    <a href="">Tienda</a>
+                </li>
+            </ul>
             <ul class="nav-right">
                 <li>
                     <a href="">Gmail</a>
                 </li>
                 <li>
-                    <a href="">Imagenes</a>
+                    <a href="">Imágenes</a>
                 </li>
                 <li class="menu-icon">
                     <a href="">
@@ -26,7 +34,7 @@
                 </li>
                 <li>
                     <a href="">
-                        <img src="	https://lh3.googleusercontent.com/ogw/AOh-ky23e9BrMMQy6Kp-pxIiEzOKNstUVv-frZtQHYAErQ=s64-c-mo" alt="Profile Photo">
+                        <img src="./Resource/profile.jpeg" alt="Profile Photo">
                     </a>
                 </li>
 
@@ -35,13 +43,14 @@
     </header>
     <main>
         <section class="main-logo">
-            <img src="https://assets.stickpng.com/images/580b57fcd9996e24bc43c51f.png" alt="">
+            <img src="./Resource/logo.png" alt="">
         </section>
         <section class="main-input">
             <div class="main-input-container">
                 <span class="search-icon"></span>
                 <input type="text">
                 <a class="micro-icon" href=""></a>
+                <a class="camera-icon" href=""></a>
             </div>
         </section>
         <section class="main-buttons">
@@ -51,9 +60,36 @@
             <div>
                 <button>Made by Zindy</button>
             </div>
-
         </section>
+        <!-- Ofrecido por Google en: català galego euskara -->
+        <div class="main-idiom">
+            <p>Ofrecido por Google en:</p>
+            <ul class="idioms">
+                <li><a href="#">català</a></li>
+                <li><a href="#">galego</a></li>
+                <li><a href="#">euskera</a></li>
+            </ul>
+            
+        </div>
     </main>
+    <footer>
+        <div class="footer1">
+            <p>España</p>
+            <a href="#"> <img src="./Resource/green-icon.png" alt=""> Emisión neutra de carbono desde el 2007</a>
+        </div>
+        <div class="footer2">
+            <ul class="footer-left">
+                <li><a href="">Publicidad</a></li>
+                <li><a href="">Empresa</a></li>
+                <li><a href="">Cómo funciona la Búsqueda</a></li>
+            </ul>
+            <ul class="footer-right">
+                <li><a href="">Privacidad</a></li>
+                <li><a href="">Términos</a></li>
+                <li><a href="">Configuración</a></li>
+            </ul>
+        </div>
+    </footer>
 
 </body>
 
