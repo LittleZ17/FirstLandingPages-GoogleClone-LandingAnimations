@@ -8,12 +8,17 @@
 html{
     font-size: 62.5%;
 }
+body{
+    height: 100vh;
+    background-image: url(./resource/img1.svg);
+}
 
 header{
     width: 100%;
     height: 80px;
     z-index: 1;
-    position: fixed;
+    position: static;
+    background-color: transparent;
 }
 .container-menu{
     max-width: 1200px;
@@ -63,30 +68,16 @@ header{
 
 .container-box{
     width: 100%;
-    height: 800px;
-    background-image: url(img1.svg);
-    background-position: right;
-    background-repeat: no-repeat;
+    height: 100vh;
     display: flex;
     align-items: center;
     justify-content: space-around;
     
 }
-
-/* .cover{
-    width: 800px;
-    height: 100%;
-    margin-top: 30px;
-    margin: auto;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;   
-} */
-
 .container-box .text{
-    max-width: 300px;
-    height: 100%;
-    margin-top: 170px;
+    width: 50%;
+    height: 100vh;
+    padding: 10% 5%;
 }
 
 .container-box .text h1{
@@ -98,6 +89,7 @@ header{
     font-size: 1.8rem;
     margin-top: 40px;
 }
+
 .container-box .text button{
     padding: 1.8rem 8rem;
     border: none;
@@ -116,9 +108,15 @@ header{
 }
 
 .container-box .imagen{
-    width: 300px;
-    height: 200px;
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    place-content: center;
     animation: move-img 2s linear infinite;
+}
+
+.imagen img{
+    height: 70vh;
 }
 
 @keyframes move-img{
